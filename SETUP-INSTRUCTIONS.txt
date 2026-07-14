@@ -1,0 +1,15 @@
+VAIL VELOCITY REGISTRATION SYSTEM V2
+
+1. Replace your Apps Script code with Code.gs.
+2. In Apps Script Project Settings → Script Properties, add:
+   STRIPE_SECRET_KEY = your live Stripe secret key beginning sk_live_
+3. Run sendTestEmail once and authorize.
+4. Run installPaymentReconciliationTrigger once and authorize.
+5. Redeploy: Deploy → Manage deployments → Edit → New version → Deploy.
+6. Upload the new register.html to GitHub/Cloudflare Pages.
+
+The website already contains:
+Apps Script: https://script.google.com/macros/s/AKfycbzhFq2uo1B3bCDg4vYa96jDcO8a1y7zrdYV_0rN0nYdWPPn7VcQxbX13CsPeLET03C2/exec
+Stripe Payment Link: https://buy.stripe.com/6oU8wP9jNeZobnR2alcMM00
+
+SECURITY: Never place the Stripe secret key in HTML, GitHub, Cloudflare, email, or public chat.
