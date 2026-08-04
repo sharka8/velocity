@@ -1,0 +1,81 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Inscripción para Velocity Volleyball para estudiantes de Sunnyside."><title>Inscripción de Sunnyside | Velocity Volleyball</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"></head><body><header class="nav"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/Logo.png" alt="Logotipo de Velocity Volleyball"><span>Velocity <b>Volleyball</b></span></a>
+<button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menu</button>
+<nav id="siteNav">
+<a href="index.html">Inicio</a>
+<a href="index.html#season">Temporada</a><a href="sunnyside-register.html" lang="en">English</a>
+<a href="coaches.html">Entrenadores</a>
+<a href="parent-info.html">Información para padres</a>
+<a href="waiver.html">Exención</a>
+<a href="contact.html">Contacto</a>
+<a class="navbtn" href="sunnyside-register.html">Inscribirse</a>
+</nav></div></header>
+<section class="page-hero"><div class="wrap"><div class="eyebrow">Inscripción de Sunnyside</div><h1>Inscríbete en Velocity Volleyball</h1><p>Voleibol juvenil para estudiantes del Distrito Escolar Unificado de Sunnyside. La inscripción cuesta $50 por jugador.</p></div></section>
+<main class="registration-shell"><section class="section"><div class="wrap reg-grid">
+<aside class="reg-summary"><div class="kicker">Resumen de la temporada</div><h2>Antes de inscribirte</h2>
+<ul><li><strong>Costo:</strong> $50 por jugador</li><li><strong>Programa:</strong> Velocity Volleyball</li><li><strong>Temporada:</strong> Siete semanas</li><li><strong>Meta semanal:</strong> Dos prácticas y un partido</li><li><strong>Lugares:</strong> Instalaciones escolares del área de Sunnyside</li><li><strong>Divisiones:</strong> Edades previstas de 9–11 y 12–15</li></ul>
+<p>Esta inscripción es para estudiantes que asisten a escuelas del Distrito Escolar Unificado de Sunnyside. Los lugares de prácticas y partidos se asignarán según la disponibilidad de instalaciones, entrenadores, grupos de edad e inscripciones.</p>
+</aside>
+<section class="reg-form-wrap"><div class="kicker">Inscripción del jugador</div><h2>Completa el formulario</h2><form id="registrationForm" action="#" method="post">
+<input type="hidden" name="season" value="Fall 2026">
+<input type="hidden" name="registration_fee" value="50">
+<input type="hidden" name="payment_status" value="Pending">
+<h3 class="form-heading">Padre, madre o tutor</h3>
+<label>Padre, madre o tutor full name<input type="text" name="parent_name" required placeholder="Nombre completo"></label>
+<label>Relación con el jugador<input type="text" name="relationship" required placeholder="Padre, madre, tutor, etc."></label>
+<label>Correo electrónico<input type="email" name="email" required placeholder="you@example.com"></label>
+<label>Teléfono celular<input type="tel" name="phone" required placeholder="(520) 555-1234"></label>
+<label class="full">Dirección del hogar<input type="text" name="home_address" required placeholder="Calle, ciudad, estado y código postal"></label>
+<h3 class="form-heading">Información del jugador</h3>
+<label>Nombre completo del jugador<input type="text" name="player_name" required placeholder="Nombre completo del jugador"></label>
+<label>Nombre preferido<input type="text" name="preferred_name" placeholder="Opcional"></label>
+<label>Fecha de nacimiento<input type="date" name="birthdate" required></label>
+<label>Grado que cursará<select name="grade" required><option value="">Selecciona el grado</option><option>3rd</option><option>4th</option><option>5th</option><option>6th</option><option>7th</option><option>8th</option><option>9th</option><option>10th</option></select></label>
+<label>Escuela a la que asiste actualmente<input type="text" name="school_attending" required placeholder="Nombre de la escuela"></label>
+<label>Distrito escolar<select name="school_district" required><option value="Sunnyside Unified School District">Sunnyside Unified School District</option></select></label>
+<label class="full">¿Qué escuela está más cerca de su hogar?<input type="text" name="closest_school" required placeholder="Escribe la escuela más cercana"></label>
+<label class="full">Segunda escuela más cercana o área alternativa aceptable<input type="text" name="alternate_school" placeholder="Opcional"></label>
+<label>Experiencia en voleibol<select name="experience" required><option value="">Selecciona el nivel de experiencia</option><option>Sin experiencia previa</option><option>Principiante</option><option>Experiencia recreativa</option><option>Experiencia en equipo escolar</option><option>Experiencia en club</option></select></label>
+<label>Talla de camiseta de juego<select name="jersey_size" required><option value="">Selecciona una talla</option><option>Youth Small</option><option>Youth Medium</option><option>Youth Large</option><option>Youth XL</option><option>Adult Small</option><option>Adult Medium</option><option>Adult Large</option><option>Adult XL</option><option>Adult 2XL</option></select></label>
+<label class="full">No disponible para practicar estas noches<input type="text" name="unavailable_nights" placeholder="Ejemplo: martes y jueves"></label>
+<label class="full">Solicitud de compañero, hermano o entrenador<input type="text" name="placement_request" placeholder="Opcional; requests are not guaranteed"></label>
+
+<h3 class="form-heading">Entrenadores voluntarios</h3>
+<div class="policy-box"><strong>Ayuda a desarrollar Velocity Volleyball</strong><p>Los padres seleccionados como <strong>entrenadores principales</strong> recibirán <strong>una inscripción gratuita para un jugador</strong> durante la misma temporada en que entrenen.</p><p>No se requiere experiencia previa entrenando voleibol. Todos los entrenadores seleccionados deben completar la <strong>Academia de Entrenadores de Velocity Volleyball</strong> antes de comenzar la temporada.</p></div>
+<label class="full">¿Le gustaría ser considerado como entrenador voluntario?<select name="coach_interest" required><option value="">Selecciona una opción</option><option>Sí, me gustaría ser considerado como entrenador principal.</option><option>Sí, me gustaría ser considerado como entrenador asistente.</option><option>Tal vez. Por favor contácteme con más información.</option><option>No, por ahora.</option></select></label>
+<label class="full">Experiencia entrenando, jugando voleibol, enseñando, liderando o trabajando con deportes juveniles<textarea name="coach_experience" placeholder="Opcional unless you are interested in coaching"></textarea></label>
+<label>¿Ha entrenado deportes juveniles anteriormente?<select name="previous_coaching"><option value="">Selecciona una opción</option><option>Sí</option><option>No</option></select></label>
+<label>¿Completará la capacitación en línea de la Academia de Entrenadores de Velocity Volleyball?<select name="coach_training"><option value="">Selecciona una opción</option><option>Sí</option><option>Tengo preguntas</option><option>No</option></select></label>
+<label class="full">¿Completará la documentación requerida para voluntarios o la verificación de antecedentes?<select name="background_check"><option value="">Selecciona una opción</option><option>Sí</option><option>Tengo preguntas</option><option>No</option></select></label>
+
+<h3 class="form-heading">Información médica y de emergencia</h3>
+<label>Nombre del contacto de emergencia<input type="text" name="emergency_contact" required placeholder="Nombre completo"></label>
+<label>Teléfono del contacto de emergencia<input type="tel" name="emergency_phone" required placeholder="(520) 555-1234"></label>
+<label class="full">Alergias, consideraciones médicas o adaptaciones<textarea name="medical_information" placeholder="Escriba la información pertinente o Ninguna" required></textarea></label>
+<h3 class="form-heading">Políticas y acuerdos</h3><div class="policy-box"><strong>Aviso del Distrito Escolar Unificado de Sunnyside</strong><p>El Distrito Escolar Unificado de Sunnyside no respalda ni promueve este programa. La distribución de información del programa se proporciona como un servicio público para las familias. No se utilizaron recursos del distrito para producir esta página de inscripción.</p></div>
+<div class="policy-box"><strong>Elegibilidad y asignación del programa de Sunnyside</strong><p>Esta inscripción está destinada a estudiantes que asisten a escuelas del Distrito Escolar Unificado de Sunnyside. Se considerarán las solicitudes de lugar de práctica, compañero, entrenador o escuela, pero no se garantizan.</p></div>
+<div class="policy-box"><strong>Política de reembolso</strong><p>Se ofrece un reembolso completo antes del inicio oficial de la temporada. Después de que comience la temporada, los reembolsos se limitan al 50% de la cuota de inscripción de $50. Las tarifas de procesamiento de pago cobradas por un proveedor externo podrían no ser reembolsables.</p></div>
+<div class="policy-box"><strong>Consentimiento del padre/madre/tutor, asunción de riesgos, liberación y autorización médica</strong><details><summary>Leer la exención de participación</summary><p>Soy el padre, madre o tutor legal del participante y doy permiso para que participe en prácticas, partidos, clínicas, evaluaciones y actividades relacionadas con el voleibol.</p><p>Entiendo que el voleibol y las actividades deportivas relacionadas implican riesgos inherentes y otros riesgos, incluidos caídas, choques, contacto con balones, redes, postes, pisos, paredes, gradas, equipo, otros jugadores o espectadores; esguinces, distensiones, fracturas, dislocaciones, moretones, lesiones en la cabeza, conmociones cerebrales, lesiones dentales, deshidratación, sobreesfuerzo y otras lesiones graves.</p><p>Conociendo estos riesgos, permito voluntariamente la participación del jugador y asumo los riesgos inherentes y razonablemente relacionados con las actividades de voleibol, en la máxima medida permitida por la ley de Arizona.</p><p>En la máxima medida permitida por la ley, libero y acepto no responsabilizar a Velocity Volleyball, Vail Velocity ni a sus propietarios, organizadores, entrenadores, voluntarios, empleados, contratistas, árbitros, patrocinadores, agentes y representantes por reclamaciones que surjan de los riesgos ordinarios de participación o de la negligencia ordinaria de las partes liberadas. Esta liberación no incluye responsabilidades que legalmente no puedan liberarse, incluida la negligencia grave, conducta temeraria o conducta intencional.</p><p>Entiendo que las actividades pueden realizarse en instalaciones propiedad u operadas por escuelas, distritos escolares, iglesias, municipios u otros terceros. Velocity Volleyball es una organización deportiva juvenil independiente y no está patrocinada, operada ni respaldada por el Distrito Escolar Unificado de Sunnyside.</p><p>Si no pueden comunicarse conmigo de inmediato durante una enfermedad o emergencia, autorizo al personal de la liga a proporcionar primeros auxilios razonables, contactar a los servicios médicos de emergencia, organizar transporte cuando sea razonablemente necesario y proporcionar información pertinente de la inscripción al personal de emergencia. Acepto la responsabilidad financiera por la atención médica y los gastos relacionados, salvo cuando otra parte sea legalmente responsable.</p><p>Acepto que el participante seguirá las reglas de la liga, las instrucciones de los entrenadores, las normas de las instalaciones, los requisitos de seguridad y las expectativas de espíritu deportivo. La conducta insegura, amenazante, abusiva o gravemente perturbadora puede resultar en suspensión o expulsión.</p><p>Entiendo que marcar la casilla de aceptación, escribir mi nombre y enviar este formulario constituye mi firma electrónica.</p></details></div>
+<label class="check-label full"><input type="checkbox" name="waiver_agreement" required><span>I have read and agree to the Consentimiento del padre/madre/tutor, asunción de riesgos, liberación y autorización médica.</span></label>
+<label class="check-label full"><input type="checkbox" name="refund_agreement" required><span>He leído y acepto la política de reembolso.</span></label>
+<label class="full">Permiso para fotos y videos<select name="media_permission" required><option value="">Selecciona una opción</option><option>Sí, I grant permission for league-related photos and video.</option><option>No, no autorizo fotos ni videos.</option></select></label>
+<label>Firma electrónica del padre/madre/tutor legal<input type="text" name="electronic_signature" required placeholder="Escriba el nombre legal completo"></label>
+<label>Fecha de firma<input type="date" name="signature_date" required></label>
+<button class="btn primary full" id="submitButton" type="submit">Enviar inscripción y continuar al pago</button>
+<div class="note">Después de enviar el formulario, será redirigido a Stripe. La inscripción solo estará completa después de recibir el pago.</div>
+</form></section>
+</div></section></main><footer class="footer"><div class="wrap">
+<div><strong>Velocity Volleyball</strong><p>Voleibol juvenil para familias del Distrito Escolar Unificado de Sunnyside.</p></div>
+<div class="footer-links"><a href="index.html">Inicio</a><a href="sunnyside-register.html">English</a><a href="sunnyside-register-es.html">Español</a><a href="contact.html">Contacto</a></div>
+<div>© <span data-year></span> Velocity Volleyball</div>
+</div></footer><script src="js/site.js"></script>
+<div class="toast" id="toast">Enviando inscripción…</div>
+<script>
+const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzhFq2uo1B3bCDg4vYa96jDcO8a1y7zrdYV_0rN0nYdWPPn7VcQxbX13CsPeLET03C2/exec";
+const STRIPE_PAYMENT_URL = "https://buy.stripe.com/00w00j67B18yeA37uFcMM02";
+function createRegistrationId(){const d=new Date();const stamp=d.getFullYear().toString()+String(d.getMonth()+1).padStart(2,"0")+String(d.getDate()).padStart(2,"0")+"-"+String(d.getHours()).padStart(2,"0")+String(d.getMinutes()).padStart(2,"0")+String(d.getSeconds()).padStart(2,"0");const rand=Math.random().toString(36).slice(2,7).toUpperCase();return `SUN-${stamp}-${rand}`;}
+document.getElementById("registrationForm").addEventListener("submit",async(event)=>{event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;const button=document.getElementById("submitButton");const toast=document.getElementById("toast");if(GOOGLE_APPS_SCRIPT_URL.includes("PASTE_")||STRIPE_PAYMENT_URL.includes("PASTE_")){alert("Agregue la URL de Google Apps Script y el enlace de pago de Stripe de Sunnyside cerca del final de este archivo antes de publicarlo.");return;}button.disabled=true;button.textContent="Submitting…";toast.textContent="Guardando inscripción…";toast.classList.add("show");const registrationId=createRegistrationId();const data=new FormData(form);data.append("registration_id",registrationId);data.append("submitted_at_local",new Date().toLocaleString());try{await fetch(GOOGLE_APPS_SCRIPT_URL,{method:"POST",body:data,mode:"no-cors"});const paymentUrl=new URL(STRIPE_PAYMENT_URL);paymentUrl.searchParams.set("client_reference_id",registrationId);toast.textContent="Inscripción guardada. Abriendo el pago seguro…";setTimeout(()=>window.location.href=paymentUrl.toString(),800);}catch(error){console.error(error);button.disabled=false;button.textContent="Enviar inscripción y continuar al pago";toast.textContent="No se pudo enviar. Inténtelo de nuevo.";}});</script></body></html>
