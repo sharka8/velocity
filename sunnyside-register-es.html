@@ -2,17 +2,79 @@
 <meta name="description" content="Inscripción para Velocity Volleyball para estudiantes de Sunnyside."><title>Inscripción de Sunnyside | Velocity Volleyball</title><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css"></head><body><header class="nav"><div class="wrap">
-<a class="brand" href="index.html"><img src="assets/Logo.png" alt="Logotipo de Velocity Volleyball"><span>Velocity <b>Volleyball</b></span></a>
-<button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menu</button>
-<nav id="siteNav">
-<a href="index.html">Inicio</a>
-<a href="index.html#season">Temporada</a><a href="sunnyside-register.html" lang="en">English</a>
-<a href="coaches.html">Entrenadores</a>
-<a href="parent-info.html">Información para padres</a>
-<a href="waiver.html">Exención</a>
-<a href="contact.html">Contacto</a>
-<a class="navbtn" href="sunnyside-register.html">Inscribirse</a>
+<style>
+
+:root{--navy:#0A132B;--teal:#00D4CB;--purple:#7B3FF2;--pink:#FF4D9D;--white:#fff;--soft:#F2F4F7;--ink:#283044;--muted:#5c6578;--line:#cbd2de}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--soft);line-height:1.6}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,90vw);margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(5,11,25,.95);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}.nav .wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.brand{font-weight:800;text-transform:uppercase;letter-spacing:.08em}.brand b{color:var(--teal)}nav{display:flex;gap:1.4rem;align-items:center;font-weight:700;font-size:.92rem}nav a:hover{color:var(--teal)}.navbtn{border:1px solid var(--teal);padding:.65rem 1rem}.menu-button{display:none;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.28);padding:.55rem .8rem;cursor:pointer}.hero{min-height:710px;color:#fff;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,9,24,.98),rgba(3,9,24,.83) 44%,rgba(3,9,24,.18)),url('assets/vail-velocity-hero-background.png') center center/cover no-repeat}.hero .wrap{padding:7rem 0}.eyebrow,.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:.78rem;font-weight:800;color:var(--teal)}h1,h2,h3{font-family:'Barlow Condensed',Arial,sans-serif;text-transform:uppercase;line-height:.95}h1{font-size:clamp(4rem,9vw,8rem);font-style:italic;margin:.5rem 0 1rem;max-width:760px}h1 span{color:transparent;-webkit-text-stroke:2px var(--teal)}.hero p{max-width:630px;font-size:1.15rem;color:#d8dfef}.actions{display:flex;gap:1rem;flex-wrap:wrap;margin:2rem 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.3rem;min-height:52px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;border:0;cursor:pointer}.primary{background:linear-gradient(135deg,var(--teal),#83fff7);color:var(--navy)}.secondary{border:1px solid rgba(255,255,255,.55);color:#fff}.badges{display:flex;gap:.7rem;flex-wrap:wrap}.badges span{padding:.45rem .7rem;border:1px solid rgba(255,255,255,.17);background:rgba(5,11,25,.55);font-size:.82rem}.announce{background:linear-gradient(90deg,var(--purple),var(--pink));color:#fff;padding:1rem 5vw;text-align:center;font-weight:800}.section{padding:6rem 0}.split{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center}h2{font-size:clamp(2.8rem,5vw,4.7rem);color:var(--navy);margin:.4rem 0 1.2rem}.lead{font-size:1.08rem;color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:.8rem 1.2rem;margin-top:1.8rem;font-weight:700}.checks span{color:#00aaa4}.brandcard{background:var(--navy);padding:1rem;box-shadow:0 24px 55px rgba(3,10,28,.2)}.brandcard img{width:100%}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.card{background:#fff;padding:1.8rem;min-height:280px;border-top:4px solid var(--navy);box-shadow:0 10px 28px rgba(10,19,43,.07)}.card:first-child{background:linear-gradient(145deg,var(--navy),#172856);color:#fff;border-color:var(--teal)}.card h3{font-size:2rem;margin:1rem 0}.num{color:var(--purple);font-weight:800}.card:first-child .num{color:var(--teal)}.values{background:linear-gradient(rgba(5,11,25,.95),rgba(5,11,25,.96)),url('assets/brand-board-purple.png') center/cover fixed;color:#fff}.values h2{color:#fff}.valuegrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}.value{padding:1.5rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09)}.value h3{font-size:1.8rem;margin:.8rem 0}.value p{color:#c9d1e2;font-size:.92rem}.faq details{border-bottom:1px solid var(--line);padding:1.1rem 0}.faq summary{font-weight:800;cursor:pointer;color:var(--navy)}.register{background:linear-gradient(135deg,#e9edf4,#fff)}.registerbox{background:radial-gradient(circle at 10% 10%,rgba(123,63,242,.32),transparent 28%),linear-gradient(145deg,var(--navy),#101e43);color:#fff;padding:4rem;display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;box-shadow:0 24px 55px rgba(3,10,28,.2)}.registerbox h2{color:#fff}.registerbox p{color:#cbd4e5}.registration-details{margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.15)}.registration-details p{margin:.45rem 0}form{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-heading{grid-column:1/-1;margin:.8rem 0 0;color:var(--teal);font-size:1.4rem;letter-spacing:.03em}label{font-size:.82rem;font-weight:700}input,select,textarea{width:100%;margin-top:.4rem;padding:.8rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff}textarea{min-height:105px;resize:vertical}input::placeholder,textarea::placeholder{color:#b9c2d3}select option{color:#111}.full{grid-column:1/-1}.check-label{display:flex;align-items:flex-start;gap:.7rem;font-weight:600;line-height:1.45}.check-label input{width:auto;margin-top:.2rem;flex:0 0 auto}.policy-box{grid-column:1/-1;padding:1rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);font-size:.82rem;color:#d6dded}.policy-box details{margin-top:.7rem}.policy-box summary{cursor:pointer;font-weight:800;color:var(--teal)}.policy-box h4{margin-bottom:.35rem;color:#fff}.note{grid-column:1/-1;font-size:.74rem;color:#a9b4c9}.footer{background:#050b19;color:#c8d0df;padding:2.5rem 0}.footer .wrap{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}.footer strong{color:#fff;text-transform:uppercase}.toast{position:fixed;right:1rem;bottom:1rem;z-index:40;max-width:360px;background:var(--navy);color:#fff;padding:1rem;border-left:4px solid var(--teal);transform:translateY(180%);transition:.25s;box-shadow:0 12px 28px rgba(0,0,0,.3)}.toast.show{transform:translateY(0)}
+@media(max-width:900px){.menu-button{display:inline-block}nav{display:none;position:absolute;left:0;right:0;top:72px;flex-direction:column;align-items:stretch;padding:1rem 5vw 1.4rem;background:#050b19}nav.open{display:flex}.split,.registerbox{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.valuegrid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.hero{min-height:630px;background-position:68% center}.hero .wrap{padding:5rem 0}h1{font-size:4.2rem}.cards,.valuegrid,.checks,form{grid-template-columns:1fr}.registerbox{padding:2rem 1.3rem}.full,.form-heading,.policy-box,.note{grid-column:auto}.section{padding:4rem 0}}
+
+
+/* Registration-page additions */
+body{background:var(--soft)}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand img{width:56px;height:56px;object-fit:contain}
+.brand span{display:inline-block}
+.page-hero{
+  background:
+    radial-gradient(circle at 85% 15%,rgba(0,212,203,.17),transparent 28%),
+    linear-gradient(135deg,#0A132B,#172856);
+  color:#fff;
+  padding:5rem 0;
+}
+.page-hero h1{
+  font-size:clamp(3.8rem,8vw,6.6rem);
+  margin:.5rem 0;
+}
+.page-hero p{max-width:760px;color:#d8dfef;font-size:1.05rem}
+.registration-shell{background:linear-gradient(135deg,#e9edf4,#fff)}
+.reg-grid{
+  display:grid;
+  grid-template-columns:.78fr 1.22fr;
+  gap:2rem;
+  align-items:start;
+}
+.reg-summary{
+  position:sticky;
+  top:96px;
+  background:linear-gradient(145deg,var(--navy),#172856);
+  color:#fff;
+  padding:2rem;
+  box-shadow:0 20px 42px rgba(3,10,28,.16);
+}
+.reg-summary h2{color:#fff;font-size:2.6rem}
+.reg-summary p,.reg-summary li{color:#d4dbea}
+.reg-summary ul{padding-left:1.15rem}
+.reg-summary li{margin:.55rem 0}
+.reg-form-wrap{
+  background:
+    radial-gradient(circle at 10% 10%,rgba(123,63,242,.26),transparent 28%),
+    linear-gradient(145deg,var(--navy),#101e43);
+  color:#fff;
+  padding:2.3rem;
+  box-shadow:0 24px 55px rgba(3,10,28,.2);
+}
+.reg-form-wrap h2{color:#fff}
+.reg-form-wrap label{color:#fff}
+.footer-links{display:flex;gap:1rem;flex-wrap:wrap}
+.footer-links a:hover{color:var(--teal)}
+.language-link{color:var(--teal);font-weight:800}
+@media(max-width:900px){
+  .reg-grid{grid-template-columns:1fr}
+  .reg-summary{position:static}
+}
+@media(max-width:600px){
+  .page-hero{padding:3.5rem 0}
+  .page-hero h1{font-size:3.4rem}
+  .reg-form-wrap,.reg-summary{padding:1.35rem}
+}
+
+</style></head><body><header class="nav"><div class="wrap">
+<a class="brand" href="es.html"><img src="assets/Logo.png" alt="Logotipo de Velocity Volleyball"><span>Velocity <b>Volleyball</b></span></a>
+<button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="siteNav">Menú</button>
+<nav id="siteNav" aria-label="Navegación principal">
+<a href="es.html">Inicio</a>
+<a href="coach-portal.html">Portal de Entrenadores</a>
+<a class="language-link" href="sunnyside-register.html" lang="en">English</a>
+<a class="navbtn" href="#registrationForm">Inscribirse</a>
 </nav></div></header>
 <section class="page-hero"><div class="wrap"><div class="eyebrow">Inscripción de Sunnyside</div><h1>Inscríbete en Velocity Volleyball</h1><p>Voleibol juvenil para estudiantes del Distrito Escolar Unificado de Sunnyside. La inscripción cuesta $50 por jugador.</p></div></section>
 <main class="registration-shell"><section class="section"><div class="wrap reg-grid">
@@ -69,10 +131,24 @@
 <div class="note">Después de enviar el formulario, será redirigido a Stripe. La inscripción solo estará completa después de recibir el pago.</div>
 </form></section>
 </div></section></main><footer class="footer"><div class="wrap">
-<div><strong>Velocity Volleyball</strong><p>Voleibol juvenil para familias del Distrito Escolar Unificado de Sunnyside.</p></div>
-<div class="footer-links"><a href="index.html">Inicio</a><a href="sunnyside-register.html">English</a><a href="sunnyside-register-es.html">Español</a><a href="contact.html">Contacto</a></div>
+<div><strong>Velocity Volleyball</strong><div>Voleibol juvenil para estudiantes y familias de Sunnyside.</div></div>
+<div class="footer-links"><a href="es.html">Inicio</a><a href="coach-portal.html">Portal de Entrenadores</a><a href="sunnyside-register.html">English</a></div>
 <div>© <span data-year></span> Velocity Volleyball</div>
-</div></footer><script src="js/site.js"></script>
+</div></footer><script>
+document.querySelectorAll("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
+const menuButton=document.getElementById("menuButton");
+const siteNav=document.getElementById("siteNav");
+if(menuButton&&siteNav){
+  menuButton.addEventListener("click",()=>{
+    const open=siteNav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded",String(open));
+  });
+  siteNav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
+    siteNav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded","false");
+  }));
+}
+</script>
 <div class="toast" id="toast">Enviando inscripción…</div>
 <script>
 const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzhFq2uo1B3bCDg4vYa96jDcO8a1y7zrdYV_0rN0nYdWPPn7VcQxbX13CsPeLET03C2/exec";
