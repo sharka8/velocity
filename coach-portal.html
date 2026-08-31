@@ -57,6 +57,11 @@
   .top-actions{justify-content:flex-start}
 }
 
+
+@media(max-width:820px){
+  #resources .milestone-columns{grid-template-columns:1fr !important}
+}
+
 </style></head><body>
 <header class="top">
 <div class="brand">
@@ -97,69 +102,53 @@
 
 <section id="resources" class="view">
   <div class="heading">
-    <div><span class="eyebrow">DOWNLOADS & TRACKERS</span><h2>Coach Resources</h2></div>
-    <p>Simple tools coaches can use throughout the season.</p>
+    <div><span class="eyebrow">PLAYER DEVELOPMENT</span><h2>Coach Resources</h2></div>
+    <p>Printable tools for tracking individual player growth throughout the season.</p>
   </div>
 
   <div class="resource-grid">
     <article class="resource-card featured-resource">
-      <span class="resource-icon">📊</span>
+      <span class="resource-icon">📈</span>
       <div>
-        <span class="badge">Excel Download</span>
-        <h3>Player Milestone Progress Tracker</h3>
-        <p>Includes an individual player milestone sheet and a team overview tracker. Coaches can record progress as Not Introduced, Learning, Developing, or Consistent.</p>
-        <a class="download-link" href="Vail_Velocity_Player_Milestone_Tracker.xlsx" download>Download Milestone Tracker</a>
-      </div>
-    </article>
-
-    <article class="resource-card">
-      <span class="resource-icon">👤</span>
-      <div>
-        <h3>Individual Player Sheet</h3>
-        <p>Use one sheet per athlete to document specific evidence, the next practice focus, and the date a milestone becomes consistent.</p>
-      </div>
-    </article>
-
-    <article class="resource-card">
-      <span class="resource-icon">👥</span>
-      <div>
-        <h3>Team Tracker</h3>
-        <p>Review the full roster at a glance and identify which skills should receive more attention in upcoming practices.</p>
+        <span class="badge">2-Page PDF</span>
+        <h3>Vail Velocity Player Progress Path</h3>
+        <p>Use one progress sheet per player. The PDF includes both the <strong>Velocity Foundations</strong> and <strong>Velocity Advanced</strong> progress charts, with checkpoints for Week 1, Midseason, and Final.</p>
+        <a class="download-link" href="progress-charts.pdf" target="_blank" rel="noopener">View / Print Progress Charts</a>
       </div>
     </article>
   </div>
 
   <div class="track-help">
-    <strong>How to use the tracker:</strong> Update only a few skills at a time. Coaches do not need to evaluate every milestone during every practice. Practice plans should identify the skills that are most relevant that day.
+    <strong>How to use the progress charts:</strong> Mark a box when the player demonstrates the milestone consistently. Use the Week 1, Midseason, and Final columns to show growth over the season. Every player develops at a different pace—the goal is to celebrate individual progress.
   </div>
 
-  <div class="milestone-columns">
+  <div class="milestone-columns" style="grid-template-columns:repeat(2,1fr)">
     <article class="milestone-card">
-      <h3>Movement & Ball Control</h3>
+      <span class="badge">FOUNDATIONS</span>
+      <h3>Velocity Foundations</h3>
+      <p>Build control, confidence, and strong fundamentals.</p>
       <ul>
-        <li>Ready position and balanced movement</li>
-        <li>Moving feet toward the ball</li>
-        <li>Returning to ready position</li>
-        <li>Forearm passing and serve receive</li>
+        <li>Passing</li>
+        <li>Setting</li>
+        <li>Serving</li>
+        <li>Attacking + Defense</li>
+        <li>Game Play + Teamwork</li>
       </ul>
+      <a class="download-link" href="progress-charts.pdf#page=1" target="_blank" rel="noopener">Open Foundations Chart</a>
     </article>
+
     <article class="milestone-card">
-      <h3>Volleyball Skills</h3>
+      <span class="badge">ADVANCED</span>
+      <h3>Velocity Advanced</h3>
+      <p>Develop consistency, strategy, game IQ, and leadership.</p>
       <ul>
-        <li>Setting with soft hands</li>
-        <li>Underhand and overhand serving</li>
-        <li>Controlled attacking</li>
-        <li>Basic defense</li>
+        <li>Passing + Serve Receive</li>
+        <li>Setting</li>
+        <li>Serving</li>
+        <li>Attacking + Defense</li>
+        <li>Game IQ + Leadership</li>
       </ul>
-    </article>
-    <article class="milestone-card">
-      <h3>Team Play & Character</h3>
-      <ul>
-        <li>Calling “Mine!” early</li>
-        <li>Understanding three contacts</li>
-        <li>Rotating and following serving order</li>
-        <li>Sportsmanship, effort, and response to feedback</li>
-      </ul>
+      <a class="download-link" href="progress-charts.pdf#page=2" target="_blank" rel="noopener">Open Advanced Chart</a>
     </article>
   </div>
 </section>
