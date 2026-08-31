@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+aa<!DOCTYPE html>
 
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Vail Velocity Coach Portal</title>
@@ -134,6 +134,70 @@
   }
 }
 
+
+/* Coach Portal mobile navigation — targets the actual .top/.top-actions structure */
+.mobile-nav-toggle{display:none}
+@media (max-width:760px){
+  header.top{
+    position:static !important;
+    top:auto !important;
+    display:block !important;
+    padding:10px 14px !important;
+  }
+  header.top .brand{
+    margin-bottom:8px;
+  }
+  header.top .top-actions{
+    display:block !important;
+    width:100% !important;
+  }
+  header.top .main-site-link{
+    display:inline-block;
+    margin-bottom:8px;
+  }
+  header.top .mobile-nav-toggle{
+    display:flex !important;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    min-height:46px;
+    padding:10px 13px;
+    margin:0;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:10px;
+    background:var(--navy,#17324d);
+    color:#fff;
+    font:inherit;
+    font-weight:800;
+    cursor:pointer;
+  }
+  header.top .mobile-nav-toggle .menu-icon{
+    font-size:1.25rem;
+    line-height:1;
+  }
+  header.top .top-actions > nav#coach-mobile-nav{
+    display:none !important;
+    position:static !important;
+    width:100% !important;
+    height:auto !important;
+    max-height:none !important;
+    overflow:visible !important;
+    margin-top:8px !important;
+    padding:0 !important;
+    flex-direction:column !important;
+    gap:4px !important;
+  }
+  header.top .top-actions > nav#coach-mobile-nav.mobile-open{
+    display:flex !important;
+  }
+  header.top nav#coach-mobile-nav .nav{
+    width:100% !important;
+    text-align:left !important;
+    justify-content:flex-start !important;
+    min-height:44px;
+    margin:0 !important;
+  }
+}
 </style></head><body>
 <header class="top">
 <div class="brand">
@@ -142,7 +206,7 @@
 </div>
 <div class="top-actions">
 <a aria-label="Return to the Vail Velocity main website" class="main-site-link" href="index.html">← Main Website</a>
-<nav aria-label="Coach Portal navigation">
+<button aria-controls="coach-mobile-nav" aria-expanded="false" class="mobile-nav-toggle" type="button"><span>Coach Portal Menu</span><span aria-hidden="true" class="menu-icon">☰</span></button><nav aria-label="Coach Portal navigation" id="coach-mobile-nav">
 <button class="nav active" data-view="home">Portal Home</button>
 <button class="nav" data-view="academy">Academy</button>
 <button class="nav" data-view="practices">Practice Plans</button>
@@ -552,27 +616,31 @@ renderRules();
 
 <script>
 (function(){
-  const btn=document.querySelector(".mobile-nav-toggle");
-  const nav=document.getElementById("mobile-site-nav");
+  const btn=document.querySelector("header.top .mobile-nav-toggle");
+  const nav=document.getElementById("coach-mobile-nav");
   if(!btn || !nav) return;
-  document.body.classList.add("mobile-nav-ready");
-  btn.addEventListener("click",function(){
-    const open=nav.classList.toggle("mobile-open");
-    btn.setAttribute("aria-expanded",String(open));
+
+  function setOpen(open){
+    nav.classList.toggle("mobile-open", open);
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
     const icon=btn.querySelector(".menu-icon");
     if(icon) icon.textContent=open ? "✕" : "☰";
+  }
+
+  btn.addEventListener("click", function(){
+    setOpen(!nav.classList.contains("mobile-open"));
   });
-  nav.querySelectorAll("a").forEach(function(link){
-    link.addEventListener("click",function(){
-      if(window.matchMedia("(max-width: 760px)").matches){
-        nav.classList.remove("mobile-open");
-        btn.setAttribute("aria-expanded","false");
-        const icon=btn.querySelector(".menu-icon");
-        if(icon) icon.textContent="☰";
-      }
+
+  nav.querySelectorAll("button.nav, a").forEach(function(item){
+    item.addEventListener("click", function(){
+      if(window.matchMedia("(max-width:760px)").matches) setOpen(false);
     });
   });
-})();
-</script>
 
-</body></html>
+  window.addEventListener("resize", function(){
+    if(!window.matchMedia("(max-width:760px)").matches) setOpen(false);
+  });
+
+  setOpen(false);
+})();
+</script></body></html>
