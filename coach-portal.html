@@ -92,6 +92,48 @@
   text-decoration:none;font-weight:900 !important;
 }
 .watch-demo:hover{filter:brightness(1.08)}
+
+/* Mobile collapsible navigation */
+.mobile-nav-toggle{display:none}
+@media (max-width: 760px){
+  header, nav, .topbar, .site-header{
+    position:static !important;
+    top:auto !important;
+  }
+  .mobile-nav-toggle{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:space-between;
+    min-height:48px;
+    padding:10px 16px;
+    border:0;
+    background:var(--navy,#17324d);
+    color:#fff;
+    font:inherit;
+    font-weight:800;
+    cursor:pointer;
+  }
+  .mobile-nav-toggle .menu-icon{font-size:1.35rem;line-height:1}
+  body.mobile-nav-ready header nav{
+    display:none !important;
+  }
+  body.mobile-nav-ready header nav.mobile-open{
+    display:flex !important;
+    position:static !important;
+    flex-direction:column !important;
+    width:100% !important;
+    height:auto !important;
+    max-height:none !important;
+    overflow:visible !important;
+  }
+  body.mobile-nav-ready header nav.mobile-open a{
+    display:block;
+    width:100%;
+    padding:12px 16px;
+  }
+}
+
 </style></head><body>
 <header class="top">
 <div class="brand">
@@ -507,4 +549,30 @@ renderRules();
   showDev("foundations-path");
 })();
 </script>
+
+<script>
+(function(){
+  const btn=document.querySelector(".mobile-nav-toggle");
+  const nav=document.getElementById("mobile-site-nav");
+  if(!btn || !nav) return;
+  document.body.classList.add("mobile-nav-ready");
+  btn.addEventListener("click",function(){
+    const open=nav.classList.toggle("mobile-open");
+    btn.setAttribute("aria-expanded",String(open));
+    const icon=btn.querySelector(".menu-icon");
+    if(icon) icon.textContent=open ? "✕" : "☰";
+  });
+  nav.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click",function(){
+      if(window.matchMedia("(max-width: 760px)").matches){
+        nav.classList.remove("mobile-open");
+        btn.setAttribute("aria-expanded","false");
+        const icon=btn.querySelector(".menu-icon");
+        if(icon) icon.textContent="☰";
+      }
+    });
+  });
+})();
+</script>
+
 </body></html>
