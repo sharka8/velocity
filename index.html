@@ -27,7 +27,7 @@
 <header class="nav"><div class="wrap">
 <a class="brand" href="index.html"><img src="assets/Logo.png" alt="Vail Velocity logo" onerror="this.style.display='none'"><span>Vail <b>Velocity</b></span></a>
 <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
-<nav id="siteNav"><a href="index.html">Home</a><a href="#season">Season</a><a href="coach-portal.html">Coach Portal</a><a class="language-toggle" href="es.html" lang="es">Español</a></nav>
+<nav id="siteNav"><a href="index.html">Home</a><a href="#season">Season</a><a href="player-portal.html">Player Portal</a><a href="coach-portal.html">Coach Portal</a><a class="language-toggle" href="es.html" lang="es">Español</a></nav>
 </div></header>
 <main>
 <section class="hero"><div class="wrap">
@@ -81,7 +81,7 @@
 <div class="registration-links"><div class="registration-option"><h3>Vail & Rita Ranch</h3><p>$135 per player • game jersey included</p><a class="btn primary" href="register.html">Vail Registration</a></div><div class="registration-option"><h3>Sunnyside Students</h3><p>For students enrolled in the Sunnyside Unified School District.</p><a class="btn primary" href="sunnyside-register.html">Sunnyside Registration</a></div></div>
 </div></section>
 </main>
-<footer class="footer"><div class="wrap"><div><strong>Vail Velocity</strong><div>Youth volleyball for Vail, Rita Ranch, southeast Tucson and Sunnyside-area families.</div></div><div class="footer-links"><a href="register.html">Vail Registration</a><a href="sunnyside-register.html">Sunnyside Registration</a><a href="es.html" lang="es">Español</a><a href="coaches.html">Coaches</a><a href="waiver.html">Waiver</a><a href="contact.html">Contact</a></div><div>© <span data-year></span> Vail Velocity</div></div></footer>
+<footer class="footer"><div class="wrap"><div><strong>Vail Velocity</strong><div>Youth volleyball for Vail, Rita Ranch, southeast Tucson and Sunnyside-area families.</div></div><div class="footer-links"><a href="register.html">Vail Registration</a><a href="sunnyside-register.html">Sunnyside Registration</a><a href="es.html" lang="es">Español</a><a href="player-portal.html">Player Portal</a><a href="coach-portal.html">Coach Portal</a><a href="coaches.html">Coaches</a><a href="waiver.html">Waiver</a><a href="contact.html">Contact</a></div><div>© <span data-year></span> Vail Velocity</div></div></footer>
 <script>
 document.querySelectorAll('[data-year]').forEach(el=>{el.textContent=new Date().getFullYear();});
 const menuButton=document.getElementById('menuButton');const siteNav=document.getElementById('siteNav');menuButton.addEventListener('click',()=>{const open=siteNav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});siteNav.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{siteNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');});});
