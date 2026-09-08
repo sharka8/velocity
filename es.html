@@ -1,85 +1,1579 @@
 <!doctype html>
 <html lang="es-MX">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Liga juvenil de voleibol Vail Velocity para familias de Vail, Rita Ranch, el sureste de Tucson y el área de Sunnyside.">
-<title>Vail Velocity Voleibol Juvenil</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0a132b;--teal:#00d4cb;--purple:#7b3ff2;--pink:#ff4d9d;--soft:#f4f6f9;--ink:#283044;--muted:#5c6578;--line:#d7dce5}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--soft);line-height:1.55}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.wrap{width:min(1120px,90vw);margin:auto}
-.nav{position:sticky;top:0;z-index:20;background:rgba(5,11,25,.98);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}.nav .wrap{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.brand{display:flex;align-items:center;gap:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.brand img{width:42px;height:42px;object-fit:contain}.brand b{color:var(--teal)}nav{display:flex;gap:1.15rem;align-items:center;font-weight:700;font-size:.9rem}nav a:hover{color:var(--teal)}.language-toggle{display:inline-flex;align-items:center;justify-content:center;padding:.6rem .85rem;border:1px solid var(--teal);color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:.06em}.language-toggle:hover{background:var(--teal);color:var(--navy)}.menu-button{display:none;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.28);padding:.5rem .75rem;cursor:pointer}
-.hero{min-height:520px;color:#fff;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,9,24,.98),rgba(3,9,24,.82) 48%,rgba(3,9,24,.25)),url('assets/vail-velocity-hero-background.png') center center/cover no-repeat,linear-gradient(115deg,#050b19 0%,#101e43 55%,#5b2bc4 100%)}.hero .wrap{padding:4.5rem 0}.eyebrow,.kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:800;color:var(--teal)}h1,h2,h3{font-family:'Barlow Condensed',Arial,sans-serif;text-transform:uppercase;line-height:.98}h1{font-size:clamp(3.7rem,8vw,6.8rem);font-style:italic;margin:.45rem 0 .85rem;max-width:760px}h1 span{color:transparent;-webkit-text-stroke:2px var(--teal)}.hero p{max-width:620px;font-size:1.08rem;color:#d8dfef;margin:0}.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.7rem 0 1.3rem}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.82rem 1.15rem;min-height:48px;text-transform:uppercase;letter-spacing:.07em;font-weight:800;border:0;cursor:pointer}.primary{background:linear-gradient(135deg,var(--teal),#83fff7);color:var(--navy)}.secondary{border:1px solid rgba(255,255,255,.55);color:#fff}.hero-action{display:flex;flex-direction:column;gap:.45rem}.hero-action .btn{width:100%}.eligibility{font-size:.74rem;color:#d8dfef;text-align:center;margin:0}.announce{background:linear-gradient(90deg,var(--purple),var(--pink));color:#fff;padding:.78rem 5vw;text-align:center;font-weight:800}
-.section{padding:3.8rem 0}h2{font-size:clamp(2.5rem,5vw,4.2rem);color:var(--navy);margin:.35rem 0 1rem}.lead{font-size:1.05rem;color:var(--muted);max-width:800px}.overview{background:#fff}.season-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.6rem}.season-item{background:var(--soft);border-top:4px solid var(--purple);padding:1.4rem;min-height:170px}.season-item:first-child{border-color:var(--teal)}.season-item h3{margin:.2rem 0 .65rem;font-size:1.7rem}.season-item p{margin:.3rem 0}.num{font-weight:800;color:var(--purple);font-size:.82rem;letter-spacing:.1em}.season-item:first-child .num{color:#008f88}
-.difference{background:linear-gradient(135deg,#050b19,#101e43);color:#fff}.difference h2{color:#fff}.difference .lead{color:#cbd4e5}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.6rem}.feature{padding:1.5rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}.feature h3{margin:.2rem 0 .65rem;font-size:1.9rem}.feature p{color:#cbd4e5;margin:0}
-.coach-strip{background:#fff}.coach-box{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;background:linear-gradient(135deg,#eef1f6,#fff);border-left:5px solid var(--purple);padding:2rem}.coach-box h2{margin-top:.25rem}.coach-side{background:var(--navy);color:#fff;padding:1.5rem}.coach-side h3{font-size:1.9rem;margin:.1rem 0 .6rem}.coach-side p{color:#d2d9e8}
-.faq{background:#fff}.faq details{border-bottom:1px solid var(--line);padding:1rem 0}.faq summary{font-weight:800;cursor:pointer;color:var(--navy)}.faq details p{margin:.65rem 0 0}
-.cta{background:linear-gradient(135deg,#e9edf4,#fff)}.cta-box{background:radial-gradient(circle at 10% 10%,rgba(123,63,242,.32),transparent 28%),linear-gradient(145deg,var(--navy),#101e43);color:#fff;padding:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;box-shadow:0 20px 45px rgba(3,10,28,.18)}.cta-box h2{color:#fff}.cta-box p{color:#cbd4e5}.registration-links{display:grid;gap:.85rem}.registration-option{background:rgba(255,255,255,.07);padding:1.15rem;border:1px solid rgba(255,255,255,.14)}.registration-option h3{font-size:1.6rem;margin:0 0 .25rem;color:#fff}.registration-option p{font-size:.85rem;margin:.15rem 0 .65rem}.registration-option .btn{width:100%}
-.footer{background:#050b19;color:#c8d0df;padding:2rem 0}.footer .wrap{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}.footer strong{color:#fff;text-transform:uppercase}.footer-links{display:flex;gap:.9rem;flex-wrap:wrap}.footer a:hover{color:var(--teal)}
-@media(max-width:900px){.menu-button{display:inline-block}nav{display:none;position:absolute;left:0;right:0;top:68px;flex-direction:column;align-items:stretch;padding:1rem 5vw 1.25rem;background:#050b19}nav.open{display:flex}.season-grid{grid-template-columns:1fr 1fr}.feature-grid{grid-template-columns:1fr}.coach-box,.cta-box{grid-template-columns:1fr}}
-@media(max-width:600px){.hero{min-height:500px}.hero .wrap{padding:3.5rem 0}h1{font-size:3.8rem}.section{padding:3rem 0}.season-grid{grid-template-columns:1fr}.brand img{width:36px;height:36px}.hero-action,.actions>.btn{width:100%;max-width:none}.cta-box{padding:1.6rem 1.1rem}}
-</style>
-</head>
-<body>
-<header class="nav"><div class="wrap">
-<a class="brand" href="index.html"><img src="assets/Logo.png" alt="Vail Velocity logo" onerror="this.style.display='none'"><span>Vail <b>Velocity</b></span></a>
-<button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="siteNav">Menú</button>
-<nav id="siteNav"><a href="es.html">Inicio</a><a href="player-portal.html">Portal del jugador</a><a href="coach-portal.html">Portal del entrenador</a><a class="language-toggle" href="index.html" lang="en">English</a></nav>
-</div></header>
-<main>
-<section class="hero"><div class="wrap">
-<div class="eyebrow">Vail • Rita Ranch • Sureste de Tucson</div>
-<h1>Juega rápido.<br><span>Crece fuerte.</span></h1>
-<p>Una liga juvenil de voleibol con un ambiente positivo, enfocada en el desarrollo de habilidades, la confianza, el trabajo en equipo, el espíritu deportivo y la diversión.</p>
-<div class="season-summary">
-      <p><strong>Temporada de Otoño II:</strong> 19 de octubre–12 de diciembre de 2026<br>
-      <strong>Fecha límite de inscripción:</strong> 12 de octubre de 2026</p>
-    </div>
 
-    <div class="actions">
-      <a class="btn primary" href="register.html">Inscríbete para la Temporada de Otoño II</a>
-    </div>
-</div></section>
-<div class="announce">Temporada de Otoño II: 19 de octubre–12 de diciembre de 2026.</div>
-<section id="season" class="section overview"><div class="wrap">
-<div class="kicker">Temporada de Otoño II</div><h2>Información de la temporada.</h2><p class="lead">Una temporada de desarrollo con prácticas constantes, competencia semanal y un ambiente de equipo positivo.</p>
+<head>
+
+<meta charset="utf-8">
+
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1"
+>
+
+<meta
+  name="description"
+  content="Liga juvenil de voleibol Vail Velocity para familias de Vail, Rita Ranch, el sureste de Tucson y el área de Sunnyside. Voleibol mixto para jugadores de 9 a 15 años, con divisiones por edad y nivel de habilidad."
+>
+
+<title>
+  Vail Velocity Voleibol Juvenil
+</title>
+
+
+<link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+>
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Inter:wght@400;600;700;800&display=swap"
+  rel="stylesheet"
+>
+
+
+<style>
+
+:root{
+  --navy:#0a132b;
+  --teal:#00d4cb;
+  --purple:#7b3ff2;
+  --pink:#ff4d9d;
+  --soft:#f4f6f9;
+  --ink:#283044;
+  --muted:#5c6578;
+  --line:#d7dce5
+}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--soft);
+  line-height:1.55
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+img{
+  max-width:100%;
+  display:block
+}
+
+.wrap{
+  width:min(1120px,90vw);
+  margin:auto
+}
+
+
+/* NAVEGACIÓN */
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(5,11,25,.98);
+  color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.08)
+}
+
+.nav .wrap{
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.65rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+
+.brand img{
+  width:42px;
+  height:42px;
+  object-fit:contain
+}
+
+.brand b{
+  color:var(--teal)
+}
+
+nav{
+  display:flex;
+  gap:1.15rem;
+  align-items:center;
+  font-weight:700;
+  font-size:.9rem
+}
+
+nav a:hover{
+  color:var(--teal)
+}
+
+.language-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.6rem .85rem;
+  border:1px solid var(--teal);
+  color:var(--teal);
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.06em
+}
+
+.language-toggle:hover{
+  background:var(--teal);
+  color:var(--navy)
+}
+
+.menu-button{
+  display:none;
+  color:#fff;
+  background:transparent;
+  border:1px solid rgba(255,255,255,.28);
+  padding:.5rem .75rem;
+  cursor:pointer
+}
+
+
+/* PORTADA */
+
+.hero{
+  min-height:540px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3,9,24,.98),
+      rgba(3,9,24,.82) 48%,
+      rgba(3,9,24,.25)
+    ),
+    url('assets/vail-velocity-hero-background.png')
+      center center/cover no-repeat,
+    linear-gradient(
+      115deg,
+      #050b19 0%,
+      #101e43 55%,
+      #5b2bc4 100%
+    )
+}
+
+.hero .wrap{
+  padding:4.5rem 0
+}
+
+.eyebrow,
+.kicker{
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.76rem;
+  font-weight:800;
+  color:var(--teal)
+}
+
+h1,
+h2,
+h3{
+  font-family:'Barlow Condensed',Arial,sans-serif;
+  text-transform:uppercase;
+  line-height:.98
+}
+
+h1{
+  font-size:clamp(3.7rem,8vw,6.8rem);
+  font-style:italic;
+  margin:.45rem 0 .85rem;
+  max-width:760px
+}
+
+h1 span{
+  color:transparent;
+  -webkit-text-stroke:2px var(--teal)
+}
+
+.hero p{
+  max-width:650px;
+  font-size:1.08rem;
+  color:#d8dfef;
+  margin:0
+}
+
+.hero-tags{
+  display:flex;
+  gap:.55rem;
+  flex-wrap:wrap;
+  margin:1.2rem 0 .2rem
+}
+
+.hero-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:.43rem .7rem;
+  border:1px solid rgba(255,255,255,.28);
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+  font-size:.72rem;
+  font-weight:800
+}
+
+.season-summary{
+  margin-top:1.15rem
+}
+
+.season-summary p{
+  font-size:.92rem
+}
+
+.actions{
+  display:flex;
+  gap:.8rem;
+  flex-wrap:wrap;
+  margin:1.7rem 0 1.3rem
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.82rem 1.15rem;
+  min-height:48px;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+  font-weight:800;
+  border:0;
+  cursor:pointer
+}
+
+.primary{
+  background:linear-gradient(
+    135deg,
+    var(--teal),
+    #83fff7
+  );
+  color:var(--navy)
+}
+
+.secondary{
+  border:1px solid rgba(255,255,255,.55);
+  color:#fff
+}
+
+
+/* ANUNCIO */
+
+.announce{
+  background:linear-gradient(
+    90deg,
+    var(--purple),
+    var(--pink)
+  );
+  color:#fff;
+  padding:.78rem 5vw;
+  text-align:center;
+  font-weight:800
+}
+
+
+/* SECCIONES GENERALES */
+
+.section{
+  padding:3.8rem 0
+}
+
+h2{
+  font-size:clamp(2.5rem,5vw,4.2rem);
+  color:var(--navy);
+  margin:.35rem 0 1rem
+}
+
+.lead{
+  font-size:1.05rem;
+  color:var(--muted);
+  max-width:800px
+}
+
+
+/* TEMPORADA */
+
+.overview{
+  background:#fff
+}
+
+.season-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1rem;
+  margin-top:1.6rem
+}
+
+.season-item{
+  background:var(--soft);
+  border-top:4px solid var(--purple);
+  padding:1.4rem;
+  min-height:185px
+}
+
+.season-item:first-child{
+  border-color:var(--teal)
+}
+
+.season-item h3{
+  margin:.2rem 0 .65rem;
+  font-size:1.7rem
+}
+
+.season-item p{
+  margin:.3rem 0
+}
+
+.num{
+  font-weight:800;
+  color:var(--purple);
+  font-size:.82rem;
+  letter-spacing:.1em
+}
+
+.season-item:first-child .num{
+  color:#008f88
+}
+
+
+/* DIFERENCIA */
+
+.difference{
+  background:linear-gradient(
+    135deg,
+    #050b19,
+    #101e43
+  );
+  color:#fff
+}
+
+.difference h2{
+  color:#fff
+}
+
+.difference .lead{
+  color:#cbd4e5
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+  margin-top:1.6rem
+}
+
+.feature{
+  padding:1.5rem;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1)
+}
+
+.feature h3{
+  margin:.2rem 0 .65rem;
+  font-size:1.9rem
+}
+
+.feature p{
+  color:#cbd4e5;
+  margin:0
+}
+
+
+/* COLOCACIÓN DE JUGADORES */
+
+.placement-section{
+  background:#eef1f6
+}
+
+.placement-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
+  align-items:center
+}
+
+.placement-card{
+  background:#fff;
+  padding:2rem;
+  border-top:4px solid var(--purple);
+  box-shadow:0 12px 30px rgba(10,19,43,.08)
+}
+
+.placement-card h3{
+  font-size:2rem;
+  color:var(--navy);
+  margin:.2rem 0 .8rem
+}
+
+.placement-points{
+  margin:0;
+  padding-left:1.2rem
+}
+
+.placement-points li{
+  margin:.6rem 0
+}
+
+
+/* ENTRENADORES */
+
+.coach-strip{
+  background:#fff
+}
+
+.coach-box{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:2rem;
+  align-items:center;
+  background:linear-gradient(
+    135deg,
+    #eef1f6,
+    #fff
+  );
+  border-left:5px solid var(--purple);
+  padding:2rem
+}
+
+.coach-box h2{
+  margin-top:.25rem
+}
+
+.coach-side{
+  background:var(--navy);
+  color:#fff;
+  padding:1.5rem
+}
+
+.coach-side h3{
+  font-size:1.9rem;
+  margin:.1rem 0 .6rem
+}
+
+.coach-side p{
+  color:#d2d9e8
+}
+
+
+/* PREGUNTAS */
+
+.faq{
+  background:#fff
+}
+
+.faq details{
+  border-bottom:1px solid var(--line);
+  padding:1rem 0
+}
+
+.faq summary{
+  font-weight:800;
+  cursor:pointer;
+  color:var(--navy)
+}
+
+.faq details p{
+  margin:.65rem 0 0
+}
+
+
+/* INSCRIPCIÓN */
+
+.cta{
+  background:linear-gradient(
+    135deg,
+    #e9edf4,
+    #fff
+  )
+}
+
+.cta-box{
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(123,63,242,.32),
+      transparent 28%
+    ),
+    linear-gradient(
+      145deg,
+      var(--navy),
+      #101e43
+    );
+
+  color:#fff;
+  padding:2.5rem;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
+  align-items:center;
+
+  box-shadow:0 20px 45px rgba(3,10,28,.18)
+}
+
+.cta-box h2{
+  color:#fff
+}
+
+.cta-box p{
+  color:#cbd4e5
+}
+
+.registration-links{
+  display:grid;
+  gap:.85rem
+}
+
+.registration-option{
+  background:rgba(255,255,255,.07);
+  padding:1.15rem;
+  border:1px solid rgba(255,255,255,.14)
+}
+
+.registration-option h3{
+  font-size:1.6rem;
+  margin:0 0 .25rem;
+  color:#fff
+}
+
+.registration-option p{
+  font-size:.85rem;
+  margin:.15rem 0 .65rem
+}
+
+.registration-option .btn{
+  width:100%
+}
+
+
+/* PIE DE PÁGINA */
+
+.footer{
+  background:#050b19;
+  color:#c8d0df;
+  padding:2rem 0
+}
+
+.footer .wrap{
+  display:flex;
+  justify-content:space-between;
+  gap:1.5rem;
+  flex-wrap:wrap
+}
+
+.footer strong{
+  color:#fff;
+  text-transform:uppercase
+}
+
+.footer-links{
+  display:flex;
+  gap:.9rem;
+  flex-wrap:wrap
+}
+
+.footer a:hover{
+  color:var(--teal)
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .menu-button{
+    display:inline-block
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:68px;
+    flex-direction:column;
+    align-items:stretch;
+    padding:1rem 5vw 1.25rem;
+    background:#050b19
+  }
+
+  nav.open{
+    display:flex
+  }
+
+  .season-grid{
+    grid-template-columns:1fr 1fr
+  }
+
+  .feature-grid{
+    grid-template-columns:1fr
+  }
+
+  .coach-box,
+  .cta-box,
+  .placement-grid{
+    grid-template-columns:1fr
+  }
+
+}
+
+
+@media(max-width:600px){
+
+  .hero{
+    min-height:500px
+  }
+
+  .hero .wrap{
+    padding:3.5rem 0
+  }
+
+  h1{
+    font-size:3.8rem
+  }
+
+  .section{
+    padding:3rem 0
+  }
+
+  .season-grid{
+    grid-template-columns:1fr
+  }
+
+  .brand img{
+    width:36px;
+    height:36px
+  }
+
+  .actions>.btn{
+    width:100%;
+    max-width:none
+  }
+
+  .cta-box{
+    padding:1.6rem 1.1rem
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVEGACIÓN -->
+
+<header class="nav">
+
+<div class="wrap">
+
+<a
+  class="brand"
+  href="es.html"
+>
+
+<img
+  src="assets/Logo.png"
+  alt="Logotipo de Vail Velocity"
+  onerror="this.style.display='none'"
+>
+
+<span>
+  Vail <b>Velocity</b>
+</span>
+
+</a>
+
+
+<button
+  class="menu-button"
+  id="menuButton"
+  type="button"
+  aria-expanded="false"
+  aria-controls="siteNav"
+>
+  Menú
+</button>
+
+
+<nav id="siteNav">
+
+<a href="es.html">
+  Inicio
+</a>
+
+<a href="player-portal.html">
+  Portal del jugador
+</a>
+
+<a href="coach-portal.html">
+  Portal del entrenador
+</a>
+
+<a
+  class="language-toggle"
+  href="index.html"
+  lang="en"
+>
+  English
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- PORTADA -->
+
+<section class="hero">
+
+<div class="wrap">
+
+<div class="eyebrow">
+  Vail • Rita Ranch • Sureste de Tucson • Sunnyside
+</div>
+
+<h1>
+  Juega rápido.<br>
+  <span>Crece fuerte.</span>
+</h1>
+
+<p>
+  Una liga juvenil de voleibol con un ambiente positivo,
+  enfocada en el desarrollo de habilidades, la confianza,
+  el trabajo en equipo, el espíritu deportivo y la diversión.
+</p>
+
+
+<div class="hero-tags">
+
+<span class="hero-tag">
+  Mixto
+</span>
+
+<span class="hero-tag">
+  Edades 9–15
+</span>
+
+<span class="hero-tag">
+  Todos los niveles
+</span>
+
+<span class="hero-tag">
+  Divisiones por edad y habilidad
+</span>
+
+</div>
+
+
+<div class="season-summary">
+
+<p>
+
+<strong>
+  Temporada de Otoño II:
+</strong>
+
+19 de octubre–12 de diciembre de 2026
+
+<br>
+
+<strong>
+  Fecha límite de inscripción:
+</strong>
+
+12 de octubre de 2026
+
+</p>
+
+</div>
+
+
+<div class="actions">
+
+<a
+  class="btn primary"
+  href="register.html"
+>
+
+Inscríbete para la Temporada de Otoño II
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<div class="announce">
+
+Inscripciones abiertas para la Temporada de Otoño II •
+Mixto • Edades 9–15 • Todos los niveles son bienvenidos
+
+</div>
+
+
+<!-- TEMPORADA -->
+
+<section
+  id="season"
+  class="section overview"
+>
+
+<div class="wrap">
+
+<div class="kicker">
+  Temporada de Otoño II
+</div>
+
+<h2>
+  Información de la temporada.
+</h2>
+
+<p class="lead">
+
+Una temporada juvenil de voleibol enfocada en el desarrollo,
+con prácticas constantes, competencia semanal y un ambiente
+de equipo positivo.
+
+Los jugadores se agrupan por edad, experiencia y nivel de
+habilidad para formar equipos equilibrados y una competencia
+apropiada.
+
+</p>
+
+
 <div class="season-grid">
-<article class="season-item"><div class="num">01 • FECHAS</div><h3>19 de octubre–12 de diciembre</h3><p>No habrá partidos durante la semana de Acción de Gracias. La disponibilidad de prácticas esa semana puede variar según la instalación.</p></article>
-<article class="season-item"><div class="num">02 • HORARIO</div><h3>1 a 2 prácticas por semana + 7 partidos en total</h3><p>La mayoría de las semanas pueden incluir hasta dos prácticas y un partido, según la disponibilidad de las instalaciones. No habrá partidos durante la semana de Acción de Gracias.</p></article>
-<article class="season-item"><div class="num">03 • UBICACIONES</div><h3>Gimnasios escolares locales</h3><p>Los equipos utilizan las instalaciones disponibles en las áreas de los distritos escolares unificados de Vail y Sunnyside.</p></article>
-<article class="season-item"><div class="num">04 • INSCRIPCIÓN</div><h3>$135 por jugador</h3><p>Incluye jersey de juego. Los descuentos promocionales elegibles se pueden aplicar al momento del pago.</p></article>
-</div></div></section>
-<section class="section difference"><div class="wrap">
-<div class="kicker">Por qué Velocity</div><h2>Más tiempo en la cancha. Más desarrollo.</h2><p class="lead">Vail Velocity está diseñado para dar a los jóvenes atletas más oportunidades de practicar, competir en un ambiente de apoyo y aprender con entrenadores que priorizan el desarrollo por encima del marcador.</p>
+
+
+<article class="season-item">
+
+<div class="num">
+  01 • FECHAS
+</div>
+
+<h3>
+  19 de octubre–12 de diciembre
+</h3>
+
+<p>
+  No habrá partidos durante la semana de Acción de Gracias.
+  La disponibilidad de prácticas esa semana puede variar
+  según la instalación.
+</p>
+
+</article>
+
+
+<article class="season-item">
+
+<div class="num">
+  02 • HORARIO
+</div>
+
+<h3>
+  Prácticas + Partidos semanales
+</h3>
+
+<p>
+  La mayoría de las semanas incluyen hasta dos prácticas
+  y un partido, según la disponibilidad de las instalaciones.
+  La temporada incluye siete partidos programados.
+</p>
+
+</article>
+
+
+<article class="season-item">
+
+<div class="num">
+  03 • DIVISIONES
+</div>
+
+<h3>
+  Edad + Nivel de habilidad
+</h3>
+
+<p>
+  Los jugadores se agrupan según su edad, experiencia,
+  nivel de habilidad y el número final de inscritos.
+  Los principiantes siempre son bienvenidos.
+</p>
+
+</article>
+
+
+<article class="season-item">
+
+<div class="num">
+  04 • INSCRIPCIÓN
+</div>
+
+<h3>
+  $135 por jugador
+</h3>
+
+<p>
+  Incluye jersey de juego.
+  Los descuentos promocionales elegibles se pueden aplicar
+  al momento del pago.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- POR QUÉ VELOCITY -->
+
+<section class="section difference">
+
+<div class="wrap">
+
+<div class="kicker">
+  Por qué Velocity
+</div>
+
+<h2>
+  Más tiempo en la cancha. Más desarrollo.
+</h2>
+
+<p class="lead">
+
+Vail Velocity está diseñado para dar a los jóvenes atletas
+más oportunidades de practicar, competir en un ambiente de apoyo
+y aprender con entrenadores que priorizan el desarrollo
+por encima del marcador.
+
+</p>
+
+
 <div class="feature-grid">
-<article class="feature"><h3>Aprende</h3><p>Los principiantes son bienvenidos, y los jugadores con experiencia también pueden seguir mejorando mediante la práctica constante.</p></article>
-<article class="feature"><h3>Compite</h3><p>Los partidos semanales permiten a los jugadores aplicar sus habilidades mientras aprenden trabajo en equipo, perseverancia y espíritu deportivo.</p></article>
-<article class="feature"><h3>Forma parte</h3><p>Queremos que cada jugador se sienta parte de un equipo, haga amistades y disfrute regresar al gimnasio.</p></article>
-</div></div></section>
-<section class="section coach-strip"><div class="wrap"><div class="coach-box">
-<div><div class="kicker">Se necesitan entrenadores voluntarios</div><h2>Ayuda a los jóvenes de nuestra comunidad a aprender el deporte.</h2><p class="lead">No se requiere experiencia previa como entrenador. Los entrenadores principales aprobados reciben una inscripción gratuita para un jugador, y los entrenadores asistentes aprobados reciben 50% de descuento en una inscripción para la temporada en la que entrenan. Los entrenadores seleccionados completan en línea la Academia de Entrenadores de Vail Velocity.</p></div>
-<div class="coach-side"><h3>Nosotros te capacitamos.</h3><p>La Academia de Entrenadores cubre las expectativas de la liga, seguridad, fundamentos, rotaciones, espíritu deportivo y comunicación con los árbitros.</p><a class="btn primary" href="coaches.html">Información para entrenadores</a></div>
-</div></div></section>
-<section class="section faq"><div class="wrap">
-<div class="kicker">Preguntas frecuentes</div><h2>Respuestas rápidas.</h2>
-<details><summary>¿Mi hijo necesita experiencia jugando voleibol?</summary><p>No. Los principiantes son bienvenidos, y los jugadores con experiencia también tendrán oportunidades de seguir mejorando.</p></details>
-<details><summary>¿Con qué frecuencia practican y juegan los equipos?</summary><p>La mayoría de las semanas pueden incluir hasta dos prácticas y un partido, según la disponibilidad de las instalaciones. No habrá partidos durante la semana de Acción de Gracias.</p></details>
-<details><summary>¿Cuánto cuesta la inscripción?</summary><p>La inscripción regular cuesta $135 por jugador e incluye un jersey de juego. Los descuentos promocionales elegibles se pueden aplicar al momento del pago.</p></details>
-<details><summary>¿Dónde se realizarán las prácticas y los partidos?</summary><p>Los equipos utilizan instalaciones escolares disponibles en las áreas de los distritos escolares unificados de Vail y Sunnyside. Siempre que sea posible, tratamos de formar grupos de práctica convenientes para las familias.</p></details>
-<details><summary>¿Cómo se preparan los entrenadores?</summary><p>Los entrenadores seleccionados completan la Academia de Entrenadores de Vail Velocity antes de que comience la temporada. Durante la temporada también tienen acceso a recursos adicionales en el Portal del Entrenador</p></details>
-</div></section>
-<section class="section cta"><div class="wrap cta-box">
-<div><div class="kicker">Inscripciones abiertas</div><h2>Únete a nosotros este otoño.</h2><p>La Temporada de Otoño II será del 19 de octubre al 12 de diciembre de 2026. <strong>Las inscripciones cierran el 12 de octubre de 2026.</strong></p><a class="language-toggle" href="index.html" lang="en">View site in English</a></div>
-<div class="registration-links"><div class="registration-option"><h3>Temporada de Otoño II</h3><p>Inscripción regular de $135 • jersey de juego incluido</p><a class="btn primary" href="register.html">Inscríbete ahora</a></div></div>
-</div></section>
+
+
+<article class="feature">
+
+<h3>
+  Aprende
+</h3>
+
+<p>
+  Los principiantes son bienvenidos, mientras que los jugadores
+  con experiencia se colocan donde puedan seguir desarrollándose
+  y enfrentando nuevos retos.
+</p>
+
+</article>
+
+
+<article class="feature">
+
+<h3>
+  Compite
+</h3>
+
+<p>
+  Los partidos semanales permiten a los jugadores aplicar sus
+  habilidades mientras aprenden trabajo en equipo, perseverancia
+  y espíritu deportivo.
+</p>
+
+</article>
+
+
+<article class="feature">
+
+<h3>
+  Forma parte
+</h3>
+
+<p>
+  Queremos que cada jugador se sienta parte de un equipo,
+  haga amistades y disfrute regresar al gimnasio.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COLOCACIÓN DE JUGADORES -->
+
+<section class="section placement-section">
+
+<div class="wrap placement-grid">
+
+
+<div>
+
+<div class="kicker">
+  Competencia al nivel adecuado
+</div>
+
+<h2>
+  Divisiones por edad y habilidad.
+</h2>
+
+<p class="lead">
+
+Cada jugador se desarrolla a un ritmo diferente.
+
+En lugar de basarnos solamente en la edad, consideramos
+la edad, la experiencia en voleibol y el nivel actual de
+habilidad al formar divisiones y equipos.
+
+</p>
+
+<p>
+
+Esto permite que los jugadores nuevos desarrollen confianza
+y que los atletas con más experiencia compitan a un nivel
+apropiado para ellos.
+
+</p>
+
+</div>
+
+
+<div class="placement-card">
+
+<h3>
+  Cómo determinamos la colocación
+</h3>
+
+<ul class="placement-points">
+
+<li>
+  Durante la inscripción, los padres proporcionan información
+  sobre la edad y la experiencia del jugador.
+</li>
+
+<li>
+  La habilidad para sacar, recibir y la experiencia previa
+  en equipos nos ayudan a conocer mejor el nivel actual
+  de cada jugador.
+</li>
+
+<li>
+  Las divisiones finales dependen del número y la distribución
+  de los jugadores inscritos.
+</li>
+
+<li>
+  La formación de equipos también toma en cuenta la disponibilidad
+  de entrenadores e instalaciones.
+</li>
+
+<li>
+  Todos los niveles de experiencia son bienvenidos.
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ENTRENADORES -->
+
+<section class="section coach-strip">
+
+<div class="wrap">
+
+<div class="coach-box">
+
+
+<div>
+
+<div class="kicker">
+  Se necesitan entrenadores voluntarios
+</div>
+
+<h2>
+  Ayuda a los jóvenes de nuestra comunidad a aprender el deporte.
+</h2>
+
+<p class="lead">
+
+No se requiere experiencia previa como entrenador.
+
+Los entrenadores principales aprobados reciben una inscripción
+gratuita para un jugador, y los entrenadores asistentes aprobados
+reciben 50% de descuento en una inscripción para la temporada
+en la que entrenan.
+
+Los entrenadores seleccionados completan en línea la Academia
+de Entrenadores de Vail Velocity.
+
+</p>
+
+</div>
+
+
+<div class="coach-side">
+
+<h3>
+  Nosotros te capacitamos.
+</h3>
+
+<p>
+
+La Academia de Entrenadores cubre las expectativas de la liga,
+seguridad, fundamentos, rotaciones, espíritu deportivo y
+comunicación con los árbitros.
+
+</p>
+
+<a
+  class="btn primary"
+  href="coaches.html"
+>
+
+Información para entrenadores
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PREGUNTAS FRECUENTES -->
+
+<section class="section faq">
+
+<div class="wrap">
+
+<div class="kicker">
+  Preguntas frecuentes
+</div>
+
+<h2>
+  Respuestas rápidas.
+</h2>
+
+
+<details>
+
+<summary>
+  ¿Mi hijo necesita experiencia jugando voleibol?
+</summary>
+
+<p>
+  No. Los principiantes son bienvenidos.
+  También aceptamos jugadores con experiencia recreativa,
+  escolar o de club.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+  ¿Vail Velocity es una liga mixta?
+</summary>
+
+<p>
+  Sí. Niños y niñas de 9 a 15 años pueden inscribirse.
+  La formación de equipos y divisiones depende de la edad,
+  el nivel de habilidad, el número de inscritos y el equilibrio
+  de los equipos.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+  ¿Cómo se determinan las divisiones?
+</summary>
+
+<p>
+  Las divisiones se forman tomando en cuenta la edad del jugador,
+  su experiencia en voleibol, su nivel de habilidad y el número
+  total de jugadores inscritos.
+
+  La inscripción incluye preguntas sobre saque, recepción y
+  experiencia previa en equipos para ayudarnos a crear una
+  competencia apropiada para jugadores en diferentes etapas
+  de desarrollo.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+  ¿Con qué frecuencia practican y juegan los equipos?
+</summary>
+
+<p>
+  La mayoría de las semanas incluyen hasta dos prácticas
+  y un partido, según la disponibilidad de las instalaciones.
+
+  No habrá partidos durante la semana de Acción de Gracias.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+  ¿Cuánto cuesta la inscripción?
+</summary>
+
+<p>
+  La inscripción regular cuesta $135 por jugador e incluye
+  un jersey de juego.
+
+  Los descuentos promocionales elegibles se pueden aplicar
+  al momento del pago.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+  ¿Dónde se realizarán las prácticas y los partidos?
+</summary>
+
+<p>
+  Los equipos utilizan instalaciones escolares disponibles
+  en Vail, Rita Ranch, el sureste de Tucson y el área de Sunnyside.
+
+  Las ubicaciones de práctica se asignan según el número de
+  jugadores inscritos, la formación de los equipos y la
+  disponibilidad de las instalaciones.
+
+  Siempre que sea posible, tratamos de formar grupos de práctica
+  convenientes para las familias.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+  ¿Los estudiantes de Sunnyside usan una inscripción diferente?
+</summary>
+
+<p>
+  No. Todos los jugadores utilizan el mismo formulario de
+  inscripción para la Temporada de Otoño II.
+
+  La información sobre la escuela y el distrito escolar nos
+  ayuda a formar equipos y determinar la ubicación de práctica
+  disponible más adecuada.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+  ¿Cómo se preparan los entrenadores?
+</summary>
+
+<p>
+  Los entrenadores seleccionados completan la Academia de
+  Entrenadores de Vail Velocity antes de que comience la temporada.
+
+  Durante la temporada también reciben planes de práctica,
+  ejercicios y otros recursos a través del Portal del Entrenador.
+</p>
+
+</details>
+
+
+</div>
+
+</section>
+
+
+<!-- INSCRIPCIÓN -->
+
+<section class="section cta">
+
+<div class="wrap cta-box">
+
+
+<div>
+
+<div class="kicker">
+  Inscripciones abiertas
+</div>
+
+<h2>
+  Únete a nosotros este otoño.
+</h2>
+
+<p>
+
+La Temporada de Otoño II será del
+
+<strong>
+  19 de octubre al 12 de diciembre de 2026.
+</strong>
+
+<br><br>
+
+<strong>
+  Las inscripciones cierran el 12 de octubre de 2026.
+</strong>
+
+</p>
+
+
+<a
+  class="language-toggle"
+  href="index.html"
+  lang="en"
+>
+
+View site in English
+
+</a>
+
+</div>
+
+
+<div class="registration-links">
+
+
+<div class="registration-option">
+
+<h3>
+  Temporada de Otoño II
+</h3>
+
+<p>
+  Edades 9–15 • Mixto • Todos los niveles
+</p>
+
+<p>
+  Inscripción regular de $135 • jersey de juego incluido
+</p>
+
+<a
+  class="btn primary"
+  href="register.html"
+>
+
+Inscríbete ahora
+
+</a>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
 </main>
-<footer class="footer"><div class="wrap"><div><strong>Vail Velocity</strong><div>Voleibol juvenil para familias de Vail, Rita Ranch, el sureste de Tucson y el área de Sunnyside.</div></div><div class="footer-links"><a href="register.html">Inscripción</a><a href="index.html" lang="en">English</a><a href="player-portal.html">Portal del jugador</a><a href="coach-portal.html">Portal del entrenador</a><a href="coaches.html">Entrenadores</a><a href="waiver.html">Exención de responsabilidad</a><a href="contact.html">Contacto</a></div><div>© <span data-year></span> Vail Velocity</div></div></footer>
+
+
+<!-- PIE DE PÁGINA -->
+
+<footer class="footer">
+
+<div class="wrap">
+
+
+<div>
+
+<strong>
+  Vail Velocity
+</strong>
+
+<div>
+  Voleibol juvenil para familias de Vail, Rita Ranch,
+  el sureste de Tucson y el área de Sunnyside.
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="register.html">
+  Inscripción
+</a>
+
+<a
+  href="index.html"
+  lang="en"
+>
+  English
+</a>
+
+<a href="player-portal.html">
+  Portal del jugador
+</a>
+
+<a href="coach-portal.html">
+  Portal del entrenador
+</a>
+
+<a href="coaches.html">
+  Entrenadores
+</a>
+
+<a href="waiver.html">
+  Exención de responsabilidad
+</a>
+
+<a href="contact.html">
+  Contacto
+</a>
+
+</div>
+
+
+<div>
+  © <span data-year></span> Vail Velocity
+</div>
+
+
+</div>
+
+</footer>
+
+
 <script>
-document.querySelectorAll('[data-year]').forEach(el=>{el.textContent=new Date().getFullYear();});
-const menuButton=document.getElementById('menuButton');const siteNav=document.getElementById('siteNav');menuButton.addEventListener('click',()=>{const open=siteNav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});siteNav.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{siteNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');});});
+
+document
+  .querySelectorAll('[data-year]')
+  .forEach(
+    el => {
+      el.textContent =
+        new Date().getFullYear();
+    }
+  );
+
+
+const menuButton =
+  document.getElementById('menuButton');
+
+const siteNav =
+  document.getElementById('siteNav');
+
+
+menuButton.addEventListener(
+  'click',
+  () => {
+
+    const open =
+      siteNav.classList.toggle('open');
+
+    menuButton.setAttribute(
+      'aria-expanded',
+      String(open)
+    );
+
+  }
+);
+
+
+siteNav
+  .querySelectorAll('a')
+  .forEach(
+    link => {
+
+      link.addEventListener(
+        'click',
+        () => {
+
+          siteNav.classList.remove(
+            'open'
+          );
+
+          menuButton.setAttribute(
+            'aria-expanded',
+            'false'
+          );
+
+        }
+      );
+
+    }
+  );
+
 </script>
+
+
 </body>
+
 </html>
