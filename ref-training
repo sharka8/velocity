@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Vail Velocity youth referee training for developmental volleyball matches.">
+<title>Vail Velocity Ref Training</title>
+<style>
+:root{--navy:#102f4f;--teal:#1597a5;--orange:#f28c28;--cream:#f5f4ef;--ink:#1f3442;--muted:#687985;--line:#d9e2e6;--green:#2f7d55;--red:#a64732;--shadow:0 10px 28px rgba(16,47,79,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}a{color:inherit}button{font:inherit}
+.top{background:var(--navy);color:#fff;padding:14px 5vw;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand h1{margin:0;font-size:1.12rem}.brand p{margin:2px 0 0;font-size:.82rem;opacity:.82}.top a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.45);padding:9px 11px;border-radius:9px;font-weight:700}
+main{max-width:900px;margin:auto;padding:30px 18px 70px}.hero{background:linear-gradient(135deg,var(--navy),#17466f);color:#fff;border-radius:22px;padding:30px;box-shadow:var(--shadow)}.eyebrow{font-size:.76rem;letter-spacing:.14em;font-weight:800;color:var(--teal)}.hero h2{font-size:clamp(2.2rem,6vw,4rem);line-height:1.02;margin:.3rem 0 1rem}.hero p{max-width:690px;color:#dbe6ef}
+.progress-wrap{margin:18px 0 6px}.progress-track{height:10px;background:rgba(255,255,255,.18);border-radius:99px;overflow:hidden}.progress-bar{height:100%;width:0;background:var(--teal);transition:width .25s}.progress-label{font-size:.82rem;margin-top:6px;color:#dbe6ef}
+.section{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px;margin-top:18px}.section h3{margin:.2rem 0 1rem;font-size:1.65rem;color:var(--navy)}.section h4{margin:1.1rem 0 .4rem}
+.callout{background:#eef8f8;border-left:5px solid var(--teal);padding:14px 16px;border-radius:10px;margin:14px 0}.rule-mod{background:#fff6ea;border-left:5px solid var(--orange);padding:14px 16px;border-radius:10px;margin:14px 0}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}.step{background:#f6f8fa;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}.step b{display:block;color:var(--navy)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card,.signal{background:#f8fafb;border:1px solid var(--line);border-radius:12px;padding:15px}.card h4{margin-top:0}.signal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.quiz-q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}.answers{display:grid;gap:8px;margin-top:10px}.answer{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px;text-align:left;cursor:pointer}.answer.correct{background:#eaf7ef;border-color:#93c7a8}.answer.wrong{background:#fff0ec;border-color:#e6ae9f}.feedback{font-weight:700;margin-top:10px}.feedback.good{color:var(--green)}.feedback.bad{color:var(--red)}
+.complete{display:none;background:var(--navy);color:#fff;border-radius:18px;padding:24px;margin-top:20px;box-shadow:var(--shadow)}.complete.show{display:block}.promise{background:#f7f9fb;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:14px;color:var(--ink)}
+.primary{border:0;background:var(--navy);color:#fff;border-radius:10px;padding:11px 15px;font-weight:800;cursor:pointer}.secondary{border:1px solid var(--navy);background:#fff;color:var(--navy);border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+footer{background:var(--navy);color:#fff;padding:24px 5vw;text-align:center}
+@media(max-width:760px){.steps{grid-template-columns:1fr 1fr}.two,.signal-grid{grid-template-columns:1fr}.top{display:block}.top a{display:inline-block;margin-top:9px}}@media(max-width:480px){.steps{grid-template-columns:1fr}.hero{padding:22px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><h1>🏐 Vail Velocity Ref Training</h1><p>Clear calls. Fair play. Safe matches.</p></div>
+  <a href="index.html">← Main Website</a>
+</header>
+
+<main>
+<section class="hero">
+  <span class="eyebrow">YOUTH REFEREE TRAINING</span>
+  <h2>Ready to ref?</h2>
+  <p>This short training covers the practical rules and routines you need for Vail Velocity developmental matches. Read each section, then complete the Ref Challenge at the end.</p>
+  <div class="progress-wrap"><div class="progress-track"><div class="progress-bar" id="progressBar"></div></div><div class="progress-label" id="progressLabel">0 of 8 sections viewed</div></div>
+</section>
+
+<section class="section training-section"><h3>1. Your Job as a Ref</h3><p>Your main responsibilities are to keep play safe, keep calls fair, and keep the game moving.</p><div class="two"><div class="card"><h4>Be calm</h4><p>Use a strong whistle, explain briefly when needed, then reset for the next rally.</p></div><div class="card"><h4>Stay neutral</h4><p>Never cheer for either team. Be respectful and consistent.</p></div></div><div class="callout"><strong>You do not need to argue.</strong> If a disagreement continues or you are unsure how to handle a situation, get the league director.</div></section>
+
+<section class="section training-section"><h3>2. Before the First Whistle</h3><div class="two"><div class="card"><h4>1. Court</h4><p>No loose balls, bags, water, or hazards.</p></div><div class="card"><h4>2. Equipment</h4><p>Net and game ball are safe and ready.</p></div><div class="card"><h4>3. Teams</h4><p>Players are in position. Captains and coaches are identified.</p></div><div class="card"><h4>4. Toss</h4><p>Winner chooses serve or side; opponent gets the other choice.</p></div></div></section>
+
+<section class="section training-section"><h3>3. Use the Same Routine for Every Rally</h3><div class="steps"><div class="step"><b>CHECK</b>Both teams ready</div><div class="step"><b>WHISTLE</b>One clear blast</div><div class="step"><b>BECKON</b>Authorize serve</div><div class="step"><b>WATCH</b>Ball and players</div><div class="step"><b>CALL</b>Whistle + point</div></div><div class="callout">After the rally: <strong>whistle → point toward the team that won → show the fault if needed.</strong></div></section>
+
+<section class="section training-section"><h3>4. Vail Velocity Serving & Rotation Rules</h3><div class="rule-mod"><strong>These are Vail Velocity developmental league modifications.</strong> They are designed to help younger players learn the game and experience more successful rallies.</div>
+<h4>Ages 9–11</h4><ul><li><strong>Underhand serve:</strong> may serve from the 10-foot line.</li><li><strong>Overhand serve:</strong> must serve from behind the end line.</li><li><strong>Five-serve limit:</strong> after the 5th serve, the other team serves—even if the serving team won that rally.</li><li>Say the serve count quietly to the scorekeeper after each rally.</li><li>When the receiving team wins the right to serve, that team rotates clockwise before serving.</li><li>Follow the league rotation so waiting players enter regularly.</li></ul>
+<h4>Ages 12–15</h4><ul><li>Underhand serving may be allowed from the 10-foot line if directed by the league for that division or match.</li><li>Overhand serving is from behind the end line.</li><li>No five-serve limit unless the league specifically announces one.</li><li>Rotate when your team wins the right to serve.</li></ul>
+<div class="callout"><strong>If players are confused:</strong> stop, check the rotation, place them correctly, then restart.</div></section>
+
+<section class="section training-section"><h3>5. Making Calls</h3><h4>In or Out</h4><div class="two"><div class="card"><h4>IN</h4><p>If any part of the ball touches a boundary line, the ball is in.</p></div><div class="card"><h4>OUT</h4><p>The entire ball must land outside the boundary line to be out.</p></div></div>
+<h4>Ball Contact</h4><ul><li>Call an obvious catch or throw.</li><li>Call four team hits.</li><li>Do not hunt for tiny mistakes or every slightly messy contact.</li><li>If the ball rebounds immediately and the contact is not clearly illegal, let play continue.</li></ul>
+<h4>Net + Other Faults</h4><ul><li>Net contact during play that should be called under league rules.</li><li>Crossing under the net and interfering with an opponent.</li><li>Illegal serve or serving before the whistle.</li><li>Server stepping over the allowed service line.</li></ul><div class="callout"><strong>Developmental officiating:</strong> call clear faults that affect play. Be patient with beginners.</div></section>
+
+<section class="section training-section"><h3>6. Safety Overrides the Rally</h3><p>Stop play immediately for:</p><ul><li>Injury</li><li>Loose ball entering the court</li><li>Unsafe equipment</li><li>Court interference or another immediate hazard</li></ul><div class="callout"><strong>Strong whistle. Stop everyone. Check safety. Get an adult.</strong></div><p>Replay the rally when outside interference stopped what would otherwise have been a fair rally.</p></section>
+
+<section class="section training-section"><h3>7. The Signals You Need Most</h3><div class="signal-grid"><div class="signal"><strong>Rally Winner</strong><p>Point toward the team that won the rally.</p></div><div class="signal"><strong>IN</strong><p>Point down toward the court.</p></div><div class="signal"><strong>OUT</strong><p>Forearms up, palms facing your body.</p></div><div class="signal"><strong>4 HITS</strong><p>Raise four fingers.</p></div><div class="signal"><strong>NET</strong><p>Indicate the net fault on the side of the team that committed it.</p></div></div><div class="callout"><strong>Practice:</strong> whistle → winner → fault if needed → reset.</div></section>
+
+<section class="section training-section"><h3>8. Match Format</h3><ul><li><strong>5-minute warm-up</strong> before the match.</li><li><strong>Best 2 out of 3 sets.</strong></li><li>Set 1: first to 25, win by 2.</li><li>Set 2: first to 25, win by 2.</li><li>Set 3 if needed: first to 15, win by 2.</li><li><strong>10-minute transition</strong> to clear the court for the next teams.</li></ul></section>
+
+<section class="section" id="quizSection"><span class="eyebrow">REF CHALLENGE</span><h3>Quick Knowledge Check</h3><p>Answer all 8 questions. You can retry any question immediately.</p><div id="quiz"></div><div class="actions"><button class="primary" id="finishBtn">Check My Training</button><button class="secondary" id="resetBtn">Reset Quiz</button></div></section>
+
+<section class="complete" id="complete"><span class="eyebrow" style="color:#9df5ef">TRAINING COMPLETE</span><h2>Ready to Ref 🏐</h2><p>You completed the Vail Velocity Youth Referee Training and answered all Ref Challenge questions correctly.</p><div class="promise"><strong>My Referee Promise</strong><ul><li>I will put safety first.</li><li>I will be fair to both teams.</li><li>I will use a clear whistle and signal.</li><li>I will stay calm and respectful.</li><li>I will ask for help when I need it.</li></ul></div><p><strong>Before your first match:</strong> bring your whistle, rule card, watch, pencil, and confidence.</p></section>
+</main>
+
+<footer><strong>Vail Velocity</strong><br>Developing athletes. Building character.</footer>
+
+<script>
+const quizData=[
+{q:"The ball touches the sideline and then bounces outside. What is the call?",a:["OUT","IN","Replay the rally"],c:1,e:"A line is part of the court. If any part of the ball touches the line, the ball is IN."},
+{q:"In an Ages 9–11 match, a player has just served the fifth rally in a row and wins the rally. What happens next?",a:["The same player serves again","The other team gets the serve","The team rotates and the next teammate serves"],c:1,e:"Under the Vail Velocity five-serve limit, service switches after the fifth serve."},
+{q:"A loose ball rolls onto the court during a rally. What should you do?",a:["Wait to see if anyone touches it","Stop play immediately","Only stop if a coach asks"],c:1,e:"Safety overrides the rally. Use a strong whistle and stop play."},
+{q:"A beginner makes a slightly messy contact, but the ball rebounds immediately and the contact is not clearly illegal. What should you do?",a:["Call a fault automatically","Let play continue","Stop and explain technique"],c:1,e:"Do not hunt for tiny mistakes. If it is not clearly illegal, let the rally continue."},
+{q:"An Ages 9–11 player is serving underhand. Where may the player serve from?",a:["Only behind the end line","From the 10-foot line","Anywhere on the court"],c:1,e:"Vail Velocity allows an underhand serve from the 10-foot line for Ages 9–11."},
+{q:"The receiving team wins the rally and now gets the serve. What should that team do first?",a:["Rotate clockwise","Keep the same positions","Switch only the front-row players"],c:0,e:"The team rotates clockwise when it wins the right to serve."},
+{q:"A coach continues arguing after you calmly explain a call. What should you do?",a:["Argue back","Ignore all future questions","Stay calm and get the league director if the issue continues"],c:2,e:"Youth referees are not expected to manage extended disputes alone."},
+{q:"What is the best way to handle a clear fault at the end of a rally?",a:["Whistle, point to the rally winner, show the fault if needed, then reset","Explain the entire rule before signaling","Only point if someone asks"],c:0,e:"Keep the sequence clear and consistent: whistle → winner → fault if needed → reset."}
+];
+let answered={};const quiz=document.getElementById("quiz");
+function renderQuiz(){answered={};quiz.innerHTML=quizData.map((item,i)=>`<div class="quiz-q"><strong>${i+1}. ${item.q}</strong><div class="answers">${item.a.map((x,j)=>`<button class="answer" data-q="${i}" data-a="${j}">${x}</button>`).join("")}</div><div class="feedback" id="fb${i}"></div></div>`).join("");document.querySelectorAll(".answer").forEach(btn=>btn.onclick=()=>{const qi=+btn.dataset.q,ai=+btn.dataset.a;btn.closest(".answers").querySelectorAll(".answer").forEach(b=>b.classList.remove("correct","wrong"));const ok=ai===quizData[qi].c;btn.classList.add(ok?"correct":"wrong");const f=document.getElementById("fb"+qi);if(ok){answered[qi]=true;f.className="feedback good";f.textContent="✓ Correct. "+quizData[qi].e}else{delete answered[qi];f.className="feedback bad";f.textContent="Try again. "+quizData[qi].e}})}
+document.getElementById("finishBtn").onclick=()=>{if(Object.keys(answered).length===quizData.length){document.getElementById("complete").classList.add("show");document.getElementById("complete").scrollIntoView({behavior:"smooth"})}else alert("Please answer all 8 questions correctly before completing the training.")};
+document.getElementById("resetBtn").onclick=()=>{renderQuiz();document.getElementById("complete").classList.remove("show")};renderQuiz();
+const sections=[...document.querySelectorAll(".training-section")],viewed=new Set();const observer=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){viewed.add(e.target);const n=viewed.size;document.getElementById("progressBar").style.width=(n/sections.length*100)+"%";document.getElementById("progressLabel").textContent=`${n} of ${sections.length} sections viewed`}})},{threshold:.35});sections.forEach(s=>observer.observe(s));
+</script>
+</body></html>
