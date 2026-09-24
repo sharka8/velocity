@@ -683,8 +683,9 @@ button:disabled{
 
     <li>
       <strong>Locations:</strong>
-      Practice and game locations are assigned based on
-      enrollment and facility availability
+      Rincon Vista Middle School — M/Th at 5:10, 6:15 or 7:20 p.m.;<br>
+      Old Vail Middle School — M/W at 5:40, 6:40 or 7:40 p.m.;<br>
+      Sycamore Elementary — W/F at 5:10, 6:15 or 7:20 p.m.
     </li>
 
   </ul>
@@ -692,8 +693,8 @@ button:disabled{
   <p>
     Players are grouped by age, experience and skill level
     to create balanced teams and appropriate competition.
-    Practice locations are assigned based on enrollment,
-    facility availability and family location when possible.
+    Families may request preferred practice locations and times.
+    Preferences are considered when teams are formed, but placement cannot be guaranteed.
   </p>
 
 </aside>
@@ -1120,17 +1121,29 @@ button:disabled{
 
 <!-- PRACTICE REQUESTS -->
 
-<label class="full">
+<h3 class="form-heading">Practice Preferences</h3>
 
-  Preferred practice days
+<div class="policy-box full">
+  <strong>Select all practice options that would work for your family.</strong>
+  <p>We will use these preferences when forming teams. Practice placement depends on enrollment, team formation, coach availability and facility availability, so requested locations and times cannot be guaranteed.</p>
+</div>
 
-  <input
-    type="text"
-    name="preferred_practice_days"
-    placeholder="Example: Mondays and Thursdays"
-  >
+<div class="full">
+  <p><strong>Rincon Vista Middle School — Monday & Thursday</strong></p>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Rincon Vista M/Th 5:10–6:10"><span>5:10–6:10 p.m.</span></label>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Rincon Vista M/Th 6:15–7:15"><span>6:15–7:15 p.m.</span></label>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Rincon Vista M/Th 7:20–8:20"><span>7:20–8:20 p.m.</span></label>
 
-</label>
+  <p><strong>Old Vail Middle School — Monday & Wednesday</strong></p>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Old Vail M/W 5:40–6:40"><span>5:40–6:40 p.m.</span></label>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Old Vail M/W 6:40–7:40"><span>6:40–7:40 p.m.</span></label>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Old Vail M/W 7:40–8:40"><span>7:40–8:40 p.m.</span></label>
+
+  <p><strong>Sycamore Elementary — Wednesday & Friday</strong></p>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Sycamore W/F 5:10–6:10"><span>5:10–6:10 p.m.</span></label>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Sycamore W/F 6:15–7:15"><span>6:15–7:15 p.m.</span></label>
+  <label class="check-label"><input type="checkbox" name="preferred_practice_days" value="Sycamore W/F 7:20–8:20"><span>7:20–8:20 p.m.</span></label>
+</div>
 
 
 <label class="full">
@@ -1399,11 +1412,11 @@ button:disabled{
   </strong>
 
   <p>
-    We will use school, district, closest-school and family-location
-    information to help create convenient practice groups whenever
-    facility and team availability allow.
+    We will use selected practice preferences along with school, district,
+    closest-school and family-location information to help create convenient
+    practice groups whenever facility and team availability allow.
 
-    Practice location, teammate, coach and division requests
+    Practice location, practice time, teammate, coach and division requests
     are not guaranteed.
   </p>
 
