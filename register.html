@@ -407,6 +407,29 @@ button:disabled{
 }
 
 
+/* PAYMENT FOR EXISTING REGISTRATIONS */
+.payment-callout{
+  margin-bottom:2rem;
+  padding:1.4rem;
+  background:#edfafa;
+  border-left:4px solid var(--teal)
+}
+.payment-callout h2{
+  margin:0 0 .7rem;
+  font-size:2rem;
+  color:var(--navy)
+}
+.payment-callout p{
+  margin:0 0 1rem
+}
+.payment-callout .btn:hover{
+  filter:brightness(.97)
+}
+.payment-callout .btn:focus-visible{
+  outline:3px solid var(--purple);
+  outline-offset:4px
+}
+
 /* FOOTER */
 
 .footer{
@@ -704,6 +727,13 @@ button:disabled{
 <!-- REGISTRATION FORM -->
 
 <section class="reg-form-wrap">
+
+<section class="payment-callout" aria-labelledby="payment-heading">
+  <h2 id="payment-heading">Already registered but still need to pay?</h2>
+  <p>Complete your payment here—there’s no need to register again. Please use the same email address you used when registering.</p>
+  <a class="btn primary" href="https://buy.stripe.com/6oU8wP9jNeZobnR2alcMM00">Pay Registration Balance</a>
+</section>
+
 
 <div class="kicker">
   Player Registration
